@@ -1,0 +1,46 @@
+mh-tag-editor {
+  height: 32px;
+  width: 200px;
+  display: inline-flex;
+  background-color: #fff;
+  border: solid 1px $border-color;
+
+  .editor-wrapper {
+    overflow: hidden;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+
+    .editor {
+      height: 32px;
+      width: 100%;
+      @include font-size-in-px(14px);
+      border: none;
+      outline: none;
+    }
+  }
+
+  .tags {
+    height: 100%;
+    max-width: 100%;
+    display: inline-flex;
+
+    .tag {
+      display: inline-flex;
+      background-color: lightblue;
+      margin-right: 5px;
+      @include font-size-in-px(14px);
+      padding: 3px;
+      height: 22px;
+      margin: 4px 2px;
+      border-radius: 5px;
+
+      .tag-delete {
+        height: 14px;
+        width: 14px;
+        margin: 2px 2px 0 5px;
+        cursor: pointer;
+      }
+    }
+  }
+}

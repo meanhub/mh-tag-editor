@@ -1,0 +1,6 @@
+<ul class="tags">
+    <li ng-repeat="tg in tagEditor.tags" class="tag">{{ tg }}<img class="tag-delete grow" src="images/remove-20x20.png" ng-click="tagEditor.removeTag($index)"/></li>
+</ul>
+<span class="editor-wrapper">
+    <input class="editor" ng-keyup="tagEditor.onInput($event)" ng-model="tagEditor.tag" />
+</span>
